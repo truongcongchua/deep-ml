@@ -10,14 +10,21 @@ def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
     Returns:
         The transposed matrix of shape (n, m)
     """
-    a = np.array(a)
-    m = a.shape[0]
-    n = a.shape[1]
+    # a = np.array(a)
+    # m = a.shape[0]
+    # n = a.shape[1]
 
-    temp = [[0] * m for _ in range(n)]
+    # temp = [[0] * m for _ in range(n)]
 
-    for i in range(m):
-        for j in range(n):
-            temp[j][i] = a[i][j]
+    # for i in range(m):
+    #     for j in range(n):
+    #         temp[j][i] = a[i][j]
     
-    return temp
+    # return temp
+
+    a = np.transpose(a)
+    return a
+
+
+
+
